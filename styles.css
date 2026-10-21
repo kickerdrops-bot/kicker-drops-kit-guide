@@ -84,7 +84,10 @@ h1:focus, main:focus { outline: none; }
 .text-placeholder { margin: 26px 0 0; font-size: 15px; line-height: 1.9; color: var(--muted); }
 .lesson-body { margin-top: 26px; font-size: 16px; line-height: 2; overflow-wrap: anywhere; }
 .lesson-body p { margin: 0 0 1.4em; white-space: pre-line; }
-.lesson-body p:last-child { margin-bottom: 0; }
+.lesson-body h3 { margin: 2em 0 .8em; padding-left: 13px; border-left: 4px solid var(--lime); font-size: 18px; line-height: 1.65; }
+.lesson-body ul { margin: 0 0 1.4em; padding-left: 1.4em; }
+.lesson-body li { padding-left: .15em; margin-bottom: .8em; }
+.lesson-body > :last-child { margin-bottom: 0; }
 .shop-link { display: flex; align-items: center; justify-content: space-between; gap: 14px; background: var(--lime); margin-top: 30px; min-height: 62px; padding: 18px 22px; font-size: 14px; font-weight: 700; line-height: 1.7; }
 .shop-link:hover { background: #bbed12; }
 .lesson-navigation { display: grid; grid-template-columns: 1fr 1fr; margin-top: 36px; gap: 16px; }

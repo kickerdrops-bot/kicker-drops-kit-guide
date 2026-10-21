@@ -153,7 +153,18 @@
     const body = typeof chapter.body === "string" ? chapter.body.trim() : "";
     if (body) {
       const paragraphs = element("div", "lesson-body");
-      body.split(/\n\s*\n/).forEach((text) => paragraphs.append(element("p", "", text)));
+      body.split(/\n\s*\n/).forEach((text) => {
+        const block = text.trim();
+        if (/^## [^\n]+$/.test(block)) {
+          paragraphs.append(element("h3", "", block.slice(3)));
+        } else if (block.split("\n").every((line) => line.startsWith("- "))) {
+          const list = element("ul", "");
+          block.split("\n").forEach((line) => list.append(element("li", "", line.slice(2))));
+          paragraphs.append(list);
+        } else {
+          paragraphs.append(element("p", "", block));
+        }
+      });
       explanation.append(paragraphs);
     } else {
       explanation.append(element("p", "text-placeholder", "解説は準備中です"));
