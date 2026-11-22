@@ -254,7 +254,7 @@ KICKER DROPS 卸専門店で、次に使いたい材料を探せます。掲載�
 小さく試す、薄く塗る、十分に乾かす。この3つを大切にしながら、自分の好きなデザインを楽しんでください。迷ったら必要な章へ戻り、ひとつずつ確認しましょう。`,
       externalLink: {
         label: "KICKER DROPS 卸専門店",
-        url: "https://kickerdrops.official.ec/"
+        url: "https://www.kickerdrops.com/shop"
       }
     }
   ]
